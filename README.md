@@ -1,6 +1,8 @@
 # Jukebox
-#Requirements
-#General Requirements
+##Requirements
+
+###General Requirements
+
 The site must be fully responsive and support at least one more screen size. You can pick between mobile, desktop, or tablet.
 To do so, it must make use of media queries.
 The site must make proper use of semantic HTML and CSS class naming.
