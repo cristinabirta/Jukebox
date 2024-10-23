@@ -8,7 +8,11 @@
   </head>
   <body>
     <header>
-      <img src="css/images/jukebox-logo-blue.png" alt="Jukebox-logo" />
+      <img
+        src="css/images/jukebox-logo-blue.png"
+        alt="Jukebox-logo"
+        class="Jukebox-logo"
+      />
       <nav>
         <input type="button" value="Subscribe" class="btn" />
         <input type="button" value="Log In" class="btn" />
@@ -16,11 +20,15 @@
     </header>
     <section class="hero">
       <div class="hero-container">
-        <img src="css/images/hero-photo.png" alt="hero-photo" />
         <div class="hero-text">
-          <h2>Milion of songs<br />at your fingertips.</h2>
+          <h2 id="hero-h2">Million of songs<br />at your fingertips.</h2>
           <p>Play any song, anywhere, on any device.</p>
-          <input type="button" value="Subscribe Today" class="btn" />
+          <input
+            type="button"
+            value="Subscribe Today"
+            class="btn"
+            id="subscribe-today-btn"
+          />
         </div>
       </div>
     </section>
@@ -64,12 +72,11 @@
             <li>Up to 5 users</li>
             <li>Unlimited devices</li>
           </ul>
-          <input type="button" value="Sign Up" class="signup-btn" />
+          <input type="button" value="Sign Up" class="signup-btn" href="" />
         </div>
       </div>
     </section>
     <section class="benefits">
-      <img src="css/images/about-photo.png" alt="about-photo" />
       <div class="cab-container">
         <div class="cab-box-1">
           <img src="css/images/icon-1.png" />
@@ -97,42 +104,65 @@
       </div>
     </section>
     <section class="artists">
-      <h3>All your favourite artists. In one place.</h3>
-      <p>Upgrade to premium and get your first 2 months free of charge!</p>
+      <div class="artist-text">
+        <h3>All your favourite artists. In one place.</h3>
+        <p>Upgrade to premium and get your first 2 months free of charge!</p>
+      </div>
       <div class="artists-gallery">
-        <img src="css/images/album1.png" src="album1" class="artist-album" />
-        <img src="css/images/album2.png" src="album2" class="artist-album" />
-        <img src="css/images/album3.png" src="album3" class="artist-album" />
-        <img src="css/images/album4.png" src="album4" class="artist-album" />
-        <img src="css/images/album5.png" src="album5" class="artist-album" />
-        <img src="css/images/album6.png" src="album6" class="artist-album" />
+        <div>
+          <img src="css/images/album1.png" src="album1" class="artist-album" />
+        </div>
+        <div>
+          <img src="css/images/album2.png" src="album2" class="artist-album" />
+        </div>
+        <div>
+          <img src="css/images/album3.png" src="album3" class="artist-album" />
+        </div>
+        <div>
+          <img src="css/images/album4.png" src="album4" class="artist-album" />
+        </div>
+        <div>
+          <img src="css/images/album5.png" src="album5" class="artist-album" />
+        </div>
+        <div>
+          <img src="css/images/album6.png" src="album6" class="artist-album" />
+        </div>
       </div>
     </section>
     <footer>
       <img src="css/images/jukebox-logo-white.png" alt="Jukebox-logo" />
       <div class="contact-container">
-        <img
-          src="css/images/social-fb.png"
-          alt="fb-icon"
-          class="contact-icons"
-        />
-        <img
-          src="css/images/social-twitter.png"
-          alt="twitter-icon"
-          class="contact-icons"
-        />
-        <img
-          src="css/images/social-insta.png"
-          alt="insta-icon"
-          class="contact-icons"
-        />
-        <img
-          src="css/images/social-vimeo.png"
-          alt="vimeo-icon"
-          class="contact-icons"
-        />
+        <div>
+          <img
+            src="css/images/social-fb.png"
+            alt="fb-icon"
+            class="contact-icons"
+          />
+        </div>
+        <div>
+          <img
+            src="css/images/social-twitter.png"
+            alt="twitter-icon"
+            class="contact-icons"
+          />
+        </div>
+
+        <div>
+          <img
+            src="css/images/social-insta.png"
+            alt="insta-icon"
+            class="contact-icons"
+          />
+        </div>
+
+        <div>
+          <img
+            src="css/images/social-vimeo.png"
+            alt="vimeo-icon"
+            class="contact-icons"
+          />
+        </div>
       </div>
     </footer>
-    <!-- <script src="script.js"></script> -if you have interaction -->
   </body>
 </html>
