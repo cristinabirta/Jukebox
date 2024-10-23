@@ -424,6 +424,12 @@ footer .contact-container {
   p {
     font-size: 15px;
   }
+  .Jukebox-logo {
+    margin-left: 0.5rem;
+  }
+  nav {
+    margin-right: 1.5rem;
+  }
   .hero-container {
     padding: 100px;
     height: 300px;
@@ -455,10 +461,14 @@ footer .contact-container {
     gap: 20px;
     padding: 0.5rem;
   }
+  footer {
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+  }
 }
 @media (max-width: 640px) {
   ::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
   }
   ::-webkit-scrollbar-thumb {
     background: rgb(0, 145, 255);
@@ -473,18 +483,31 @@ footer .contact-container {
   #membership-text-h3 {
     font-size: 25px;
   }
+  header .Jukebox-logo {
+    margin-left: 0.05rem;
+  }
+  nav {
+    margin-right: 0.5rem;
+  }
+  nav .btn a {
+    font-weight: bold;
+    padding: 0.3rem 0.7rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.15px;
+    border: 2px solid transparent;
+  }
   .cab-h3 {
     font-size: 20px;
   }
   .hero-container {
     padding: 70px;
-    height: 300px;
+    height: 200px;
   }
   .Jukebox-logo {
-    margin-left: 0.5rem;
+    margin-left: 0.1rem;
   }
   nav {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
   .artists-gallery {
     display: grid;
@@ -496,7 +519,7 @@ footer .contact-container {
     gap: 5px;
   }
   footer {
-    padding-left: 1rem;
-    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
