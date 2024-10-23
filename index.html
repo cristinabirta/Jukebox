@@ -14,8 +14,8 @@
         class="Jukebox-logo"
       />
       <nav>
-        <input type="button" value="Subscribe" class="btn" />
-        <input type="button" value="Log In" class="btn" />
+        <div class="btn"><a href="#membership">Subscribe</a></div>
+        <div class="btn"><a href="#">Log In</a></div>
       </nav>
     </header>
     <section class="hero">
@@ -23,23 +23,18 @@
         <div class="hero-text">
           <h2 id="hero-h2">Million of songs<br />at your fingertips.</h2>
           <p>Play any song, anywhere, on any device.</p>
-          <input
-            type="button"
-            value="Subscribe Today"
-            class="btn"
-            id="subscribe-today-btn"
-          />
+          <div class="btn" id="subscribe-today-btn"><a href="#membership">Subscribe Today</a></div>
         </div>
       </div>
     </section>
-    <section class="membership">
+    <section class="membership" id="membership">
       <div class="membership-text">
-        <h3>Your music. Your way.</h3>
+        <h3 id="membership-text-h3" >Your music. Your way.</h3>
         <p>Upgrade to premium and get your first 2 months free of charge!</p>
       </div>
       <div class="membership-container">
         <div class="basic-box">
-          <h2>Basic</h2>
+          <h3>Basic</h3>
           <h4>Free</h4>
           <ul>
             <li>MP3 audio</li>
@@ -48,10 +43,10 @@
             <li>Up to 1 user</li>
             <li>1 device</li>
           </ul>
-          <input type="button" value="Sign Up" class="signup-btn" />
+          <div class="signup-btn"><a href="#">Sign Up</a></div>
         </div>
         <div class="plus-box">
-          <h2>Plus</h2>
+          <h3>Plus</h3>
           <h4>$10/month</h4>
           <ul>
             <li>16-bit audio</li>
@@ -60,10 +55,10 @@
             <li>Up to 3 users</li>
             <li>2 devices</li>
           </ul>
-          <input type="button" value="Sign Up" class="signup-btn" />
+          <div class="signup-btn"><a href="#">Sign Up</a></div>
         </div>
         <div class="premium-box">
-          <h2>Premium</h2>
+          <h3>Premium</h3>
           <h4>$20/month</h4>
           <ul>
             <li>Lossles Hi-Fi audio</li>
@@ -72,7 +67,7 @@
             <li>Up to 5 users</li>
             <li>Unlimited devices</li>
           </ul>
-          <input type="button" value="Sign Up" class="signup-btn" href="" />
+          <div class="signup-btn"><a href="#">Sign Up</a></div>
         </div>
       </div>
     </section>
@@ -80,7 +75,7 @@
       <div class="cab-container">
         <div class="cab-box-1">
           <img src="css/images/icon-1.png" />
-          <h3>Stream to Any Device</h3>
+          <h3 class="cab-h3">Stream to Any Device</h3>
           <p>
             Play all your favourite music on <br />any device. Anytime.
             Anywhere.
@@ -88,7 +83,7 @@
         </div>
         <div class="cab-box-2">
           <img src="css/images/icon-2.png" />
-          <h3>High Quality Audio</h3>
+          <h3 class="cab-h3">High Quality Audio</h3>
           <p>
             Get the best sounding audio of any<br />streaming service on the
             web.
@@ -96,7 +91,7 @@
         </div>
         <div class="cab-box-3">
           <img src="css/images/icon-3.png" />
-          <h3>Milions of Songs</h3>
+          <h3 class="cab-h3">Milions of Songs</h3>
           <p>
             Find all your favourite artists in<br />our extensive music library.
           </p>
@@ -130,7 +125,7 @@
       </div>
     </section>
     <footer>
-      <img src="css/images/jukebox-logo-white.png" alt="Jukebox-logo" />
+      <img src="css/images/jukebox-logo-white.png" alt="Jukebox-logo"class=Jukebox-white-logo />
       <div class="contact-container">
         <div>
           <img

@@ -50,9 +50,16 @@ header {
 }
 nav {
   margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap:10px
 }
 /* Navigation and Hero section buttons-style with transition property */
-.btn {
+a{
+  text-decoration: none;
+  color: white;
+}
+.btn a{
   font-weight: bold;
   padding: 0.5rem 1rem;
   background-color: #ec1e85;
@@ -62,16 +69,16 @@ nav {
   border-radius: 100px;
   transition: border-color 300ms ease;
 }
-#subscribe-today-btn {
-  width: 14rem;
-  height: 3rem;
-  font-size: 17px;
-}
-.btn:hover {
+.btn a:hover {
   border-color: #ec1e85;
-  text-decoration: none;
   background-color: #ffffff;
   color: #ec1e85;
+}
+#subscribe-today-btn {
+  width: 16rem;
+  height: 3.5rem;
+  font-size: 18px;
+  padding-top: 20px;
 }
 /* Hero section with flexbox */
 .hero-container {
@@ -86,6 +93,12 @@ nav {
   padding: 200px;
 }
 /* Memberships section with flexbox  */
+.membership{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
 .membership-text {
   display: flex;
   flex-direction: column;
@@ -103,13 +116,13 @@ nav {
   gap: 70px;
   text-align: center;
   color: white;
-  flex-grow: 1;
-  flex-shrink: 1;
+
 }
-.membership-container ul li {
+.membership-container ul {
   list-style-type: none;
   text-align: center;
   line-height: 1.5;
+  padding-left: 0;
 }
 .membership-text h3 {
   color: rgb(0, 145, 255);
@@ -121,7 +134,7 @@ nav {
 .basic-box {
   background-color: rgb(0, 145, 255);
   width: 250px;
-  height: 375px;
+  height: 355px;
   border-radius: 5%;
   padding-right: 20px;
   position: relative;
@@ -173,7 +186,7 @@ nav {
 .plus-box {
   background-color: rgb(106, 0, 255);
   width: 250px;
-  height: 375px;
+  height: 355px;
   border-radius: 5%;
   padding-right: 20px;
   position: relative;
@@ -217,7 +230,7 @@ nav {
 .premium-box {
   background-color: rgb(166, 0, 255);
   width: 250px;
-  height: 375px;
+  height: 355px;
   border-radius: 5%;
   padding-right: 20px;
   position: relative;
@@ -260,7 +273,7 @@ nav {
 /*End the glowing effect premium-box*/
 
 /* Membership boxes/cards - taking every box button separate and style it individualy???*/
-.basic-box .signup-btn {
+.basic-box .signup-btn a{
   width: 120px;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -272,13 +285,13 @@ nav {
   border-radius: 100px;
   transition: border-color 300ms ease;
 }
-.basic-box .signup-btn:hover {
+.basic-box .signup-btn a:hover {
   border-color: white;
   text-decoration: none;
   background-color: #ffffff;
   color: rgb(0, 145, 255);
 }
-.plus-box .signup-btn {
+.plus-box .signup-btn a{
   width: 120px;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -290,13 +303,13 @@ nav {
   border-radius: 100px;
   transition: border-color 300ms ease;
 }
-.plus-box .signup-btn:hover {
+.plus-box .signup-btn a:hover {
   border-color: white;
   text-decoration: none;
   background-color: #ffffff;
   color: rgb(106, 0, 255);
 }
-.premium-box .signup-btn {
+.premium-box .signup-btn a{
   width: 120px;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -308,11 +321,15 @@ nav {
   border-radius: 100px;
   transition: border-color 300ms ease;
 }
-.premium-box .signup-btn:hover {
+.premium-box .signup-btn a:hover {
   border-color: white;
   text-decoration: none;
   background-color: #ffffff;
   color: rgb(166, 0, 255);
+}
+
+.signup-btn{
+  padding-top: 20px;
 }
 /* Benefits section with flexbox */
 .benefits {
@@ -354,6 +371,12 @@ nav {
   gap: 50px;
   padding: 2rem;
 }
+.artist-album{
+  transition: 0.3s ease;
+}
+.artist-album:hover{
+  transform: scale(1)translateY(-5px);
+}
 /*footer section with flexbox*/
 footer {
   display: flex;
@@ -370,15 +393,31 @@ footer .contact-container {
   display: flex;
   flex-direction: row;
 }
-
+/*Contact icons on hover effect */
+.contact-icons{
+  transition: 0.3s ease;
+}
+.contact-icons:hover{
+  transform: scale(1)translateY(-5px);
+}
 /*Making the website responsive for tablets and phones - 2 breakpoints*/
 
-@media (max-width: 960px) {
-  body {
-    padding: 10px;
+@media (max-width: 965px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 145, 255);
+    border-radius: 10%;
   }
   #hero-h2 {
     font-size: 40px;
+  }
+  #membership-text-h3{
+    font-size: 35px;
+  }
+  .cab-h3{
+    font-size: 30px;
   }
   .hero-container {
     padding: 100px;
@@ -413,11 +452,21 @@ footer .contact-container {
   }
 }
 @media (max-width: 640px) {
-  body {
-    padding: 5px;
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 145, 255);
+    border-radius: 10%;
   }
   #hero-h2 {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  #membership-text-h3{
+    font-size: 25px;
+  }
+  .cab-h3{
+    font-size: 25px;
   }
   .hero-container {
     padding: 70px;
