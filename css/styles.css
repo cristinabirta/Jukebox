@@ -404,7 +404,7 @@ footer .contact-container {
 }
 /*Making the website responsive for tablets and phones - 2 breakpoints*/
 
-@media (max-width: 970px) {
+@media (max-width: 1060px) {
   ::-webkit-scrollbar {
     width: 4px;
   }
@@ -416,13 +416,13 @@ footer .contact-container {
     font-size: 35px;
   }
   #membership-text-h3 {
-    font-size: 30px;
-  }
-  .cab-h3 {
     font-size: 25px;
   }
+  .cab-h3 {
+    font-size: 20px;
+  }
   p {
-    font-size: 17px;
+    font-size: 15px;
   }
   .hero-container {
     padding: 100px;
@@ -464,20 +464,17 @@ footer .contact-container {
     background: rgb(0, 145, 255);
     border-radius: 10%;
   }
-  body {
-    padding: 5px;
-  }
   #hero-h2 {
     font-size: 30px;
   }
   p {
-    font-size: 15px;
+    font-size: 13px;
   }
   #membership-text-h3 {
     font-size: 25px;
   }
   .cab-h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .hero-container {
     padding: 70px;
