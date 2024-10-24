@@ -437,16 +437,33 @@ footer .contact-container {
   .membership {
     display: flex;
     flex-direction: column;
+    height: 550px;
   }
   .membership-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     margin-bottom: 50px;
     margin-top: 30px;
   }
   .membership-text {
     margin-top: 20px;
+    text-align: center;
+  }
+  .basic-box {
+    width: 200px;
+    height: 300px;
+    line-height: 5px;
+  }
+  .plus-box {
+    width: 200px;
+    height: 300px;
+    line-height: 5px;
+  }
+  .premium-box {
+    width: 200px;
+    height: 300px;
+    line-height: 5px;
   }
   .benefits {
     height: 950px;
@@ -464,6 +481,17 @@ footer .contact-container {
   footer {
     padding-left: 1rem;
     padding-right: 1.5rem;
+  }
+}
+@media (max-width: 820px) {
+  .membership {
+    height: auto;
+  }
+  .membership-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 640px) {
@@ -495,6 +523,21 @@ footer .contact-container {
     color: rgb(255, 255, 255);
     letter-spacing: 0.15px;
     border: 2px solid transparent;
+  }
+  .basic-box {
+    width: 180px;
+    height: 290px;
+    line-height: 0.5px;
+  }
+  .plus-box {
+    width: 180px;
+    height: 290px;
+    line-height: 0.5px;
+  }
+  .premium-box {
+    width: 180px;
+    height: 290px;
+    line-height: 0.5px;
   }
   .cab-h3 {
     font-size: 20px;
